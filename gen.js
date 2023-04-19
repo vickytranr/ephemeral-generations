@@ -164,30 +164,6 @@ var wB = Math.floor(Math.random()*400+100);
 var hB = Math.floor(Math.random()*100+300);
 
 
-
-
-setUpCanvas();
-
-animationLoop();
-
-function animationLoop(){
-
-
-        clear();
-        rect(o1);
-    
-        ctx.drawImage(bigHalf,xB,yB,wB,hB);
-        ctx.drawImage(images[result1], x1, y1, w1, h1);
-        ctx.drawImage(images[result2], x2, y2, w2, h2);
-        ctx.drawImage(images[result3], x3, y3, w3, h3);
-        ctx.drawImage(flow,xF,yF,wF,hF);
-        ctx.drawImage(images[result4], x4, y4, w4, h4);
-        ctx.drawImage(images[result5], x5, y5, w5, h5);
-   
-      
-    
-    var textArray = ["wordle?","india vs. england?","ukraine?","queen elizabeth?","ind vs SA?","election results?","passing?","powerball numbers?","johnny depp?","will smith?","amber heard?","euphoria?","betty white?","rogers outage?","why is there a formula shortage?","why is rogers down?"];
-
         //textArray1 randoms
         var xT1 = Math.floor(Math.random()*1200+20);
         var yT1 = Math.floor(Math.random()*600+20);
@@ -224,6 +200,30 @@ function animationLoop(){
         var resultT4 = Math.floor(Math.random()*16);
         var resultT5 = Math.floor(Math.random()*16);
     
+
+
+setUpCanvas();
+
+animationLoop();
+
+function animationLoop(){
+
+
+        clear();
+        rect(o1);
+    
+        ctx.drawImage(bigHalf,xB,yB,wB,hB);
+        ctx.drawImage(images[result1], x1, y1, w1, h1);
+        ctx.drawImage(images[result2], x2, y2, w2, h2);
+        ctx.drawImage(images[result3], x3, y3, w3, h3);
+        ctx.drawImage(flow,xF,yF,wF,hF);
+        ctx.drawImage(images[result4], x4, y4, w4, h4);
+        ctx.drawImage(images[result5], x5, y5, w5, h5);
+   
+      
+    
+    var textArray = ["wordle?","india vs. england?","ukraine?","queen elizabeth?","ind vs SA?","election results?","passing?","powerball numbers?","johnny depp?","will smith?","amber heard?","euphoria?","betty white?","rogers outage?","why is there a formula shortage?","why is rogers down?"];
+
         //colour text
         var cT1 = Math.floor(Math.random()*35+o1.c);
         var aT1 = Math.random()*0.4;
@@ -244,16 +244,16 @@ function animationLoop(){
 
         ctx.font= wT5+"px helvetica";
         ctx.fillText(textArray[resultT5], xT5, yT5);
-
+    
 
         ctx.font= 40+"px helvetica";
     ctx.fillStyle = "hsla("+cT1+",100%,20%,1)";
     ctx.fillText("what was it this time?", 100, 100);
 
     circle(o2);
-    setTimeout(()=> {
+
     requestAnimationFrame(animationLoop);
-    },100);
+
 }
 
 function clear(){
