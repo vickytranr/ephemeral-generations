@@ -1,0 +1,43 @@
+canvas{
+    padding: 10px;
+    margin: auto;
+    display: block;
+}
+h1{
+    text-align: center;
+    display: block;
+    font-family: 'Helvetica', Times, serif;
+    font-style: italic;
+    font-size: 40px;
+    color:rgb(41, 34, 30);
+}
+h2{
+    font-family: 'Helvetica', Times, serif;
+    font-style:normal;
+    text-align: center;
+    display: block;
+    font-size: 20px;
+    color:rgb(41, 34, 30);
+    line-height: 30px;
+
+}
+html{
+    background-image: url("gdd4.gif");
+    background-repeat: no-repeat;
+    background-size: 700px;
+    background-attachment: fixed;
+    background-position: center;
+}
+#flow1{
+    z-index: 1;
+    position: absolute;
+    margin-top:-300px;
+    transform: scaleX(-1) rotate(90deg);
+}
+#flow2{
+    z-index: 1;
+    position: absolute;
+    margin-top:-300px;
+    right: 0;
+    transform: rotate(90deg);
+}
