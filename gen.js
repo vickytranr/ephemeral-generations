@@ -226,7 +226,7 @@ function animationLoop(){
 
         //colour text
         var cT1 = Math.floor(Math.random()*35+o1.c);
-        var aT1 = Math.random()*0.4;
+        var aT1 = Math.random()*0.6;
 
 
         ctx.font= wT1+"px helvetica";
