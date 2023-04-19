@@ -45,6 +45,8 @@ var lixi = document.getElementById("lixi");
 var transfer = document.getElementById("transfer");
 var bigHalf = document.getElementById("bigHalf");
 var flow = document.getElementById("flow");
+var gif = document.getElementById("gif");
+
 
 var images = [map,airport,organ,zara,ticket,lixi,transfer,bigHalf,flow];
 
@@ -203,15 +205,18 @@ var hB = Math.floor(Math.random()*100+300);
 
 
 setUpCanvas();
-
 animationLoop();
+
 
 function animationLoop(){
 
+clear();
 
-        clear();
+
+
+
         rect(o1);
-    
+
         ctx.drawImage(bigHalf,xB,yB,wB,hB);
         ctx.drawImage(images[result1], x1, y1, w1, h1);
         ctx.drawImage(images[result2], x2, y2, w2, h2);
@@ -228,6 +233,7 @@ function animationLoop(){
         var cT1 = Math.floor(Math.random()*35+o1.c);
         var aT1 = Math.random()*0.6;
 
+ 
 
         ctx.font= wT1+"px helvetica";
         ctx.fillStyle = "hsla("+cT1+",100%,20%,"+aT1+")";
@@ -260,12 +266,7 @@ function clear(){
     ctx.clearRect(0,0,w,h);
 }
 
-function circle(o){
-    ctx.beginPath();
-    ctx.arc(o.x,o.y,o.r,0,2*Math.PI);
-    ctx.fillStyle = "hsla("+o.c+",100%,50%,"+o.a+")";
-    ctx.fill();
-}
+
 
 function text() {
     ctx.font="100px gambado-sans-forte";
