@@ -228,19 +228,29 @@ function animationLoop(){
         var cT1 = Math.floor(Math.random()*35+o1.c);
         var aT1 = Math.random()*0.4;
 
-    // setTimeout(()=> {
+    setTimeout(()=> {
+
+
         ctx.font= wT1+"px helvetica";
         ctx.fillStyle = "hsla("+cT1+",100%,20%,"+aT1+")";
         ctx.fillText(textArray[resultT1], xT1, yT1);
+    },50);
+    setTimeout(()=> {
         ctx.font= wT2+"px helvetica";
         ctx.fillText(textArray[resultT2], xT2, yT2);
+    },100);
+    setTimeout(()=> {
         ctx.font= wT3+"px helvetica";
         ctx.fillText(textArray[resultT3], xT3, yT3);
+    },150);
+    setTimeout(()=> {
         ctx.font= wT4+"px helvetica";
         ctx.fillText(textArray[resultT4], xT4, yT4);
+    },200);
+    setTimeout(()=> {
         ctx.font= wT5+"px helvetica";
         ctx.fillText(textArray[resultT5], xT5, yT5);
-    // },10);
+    },250);
 
 
         ctx.font= 40+"px helvetica";
