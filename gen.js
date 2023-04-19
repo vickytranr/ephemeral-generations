@@ -172,7 +172,7 @@ animationLoop();
 
 function animationLoop(){
 
-    setTimeout(()=> {
+
         clear();
         rect(o1);
     
@@ -187,7 +187,7 @@ function animationLoop(){
       
     
     var textArray = ["wordle?","india vs. england?","ukraine?","queen elizabeth?","ind vs SA?","election results?","passing?","powerball numbers?","johnny depp?","will smith?","amber heard?","euphoria?","betty white?","rogers outage?","why is there a formula shortage?","why is rogers down?"];
-    
+
         //textArray1 randoms
         var xT1 = Math.floor(Math.random()*1200+20);
         var yT1 = Math.floor(Math.random()*600+20);
@@ -227,7 +227,8 @@ function animationLoop(){
         //colour text
         var cT1 = Math.floor(Math.random()*35+o1.c);
         var aT1 = Math.random()*0.4;
-    
+
+    // setTimeout(()=> {
         ctx.font= wT1+"px helvetica";
         ctx.fillStyle = "hsla("+cT1+",100%,20%,"+aT1+")";
         ctx.fillText(textArray[resultT1], xT1, yT1);
@@ -239,14 +240,12 @@ function animationLoop(){
         ctx.fillText(textArray[resultT4], xT4, yT4);
         ctx.font= wT5+"px helvetica";
         ctx.fillText(textArray[resultT5], xT5, yT5);
-    
+    // },10);
 
 
         ctx.font= 40+"px helvetica";
     ctx.fillStyle = "hsla("+cT1+",100%,20%,1)";
     ctx.fillText("what was it this time?", 100, 100);
-
-    },0);
 
     circle(o2);
 
